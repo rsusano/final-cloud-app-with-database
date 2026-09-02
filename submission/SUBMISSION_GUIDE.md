@@ -67,15 +67,16 @@ Upload **`07-final.png`** showing:
 ## Cloud IDE setup commands
 
 ```bash
-cd /home/project
-git clone https://github.com/rsusano/final-cloud-app-with-database.git
-cd final-cloud-app-with-database
-pip3 install -r requirements.txt
+cd /home/project/final-cloud-app-with-database
+pip3 install Django==3.1.3
+pip3 install "Pillow>=10.0"
 python3 manage.py makemigrations onlinecourse
 python3 manage.py migrate
 python3 manage.py createsuperuser
 python3 manage.py runserver 0.0.0.0:8000
 ```
+
+> **If `pip3 install -r requirements.txt` fails on Pillow:** install Django and Pillow separately as above (old Pillow 8.0.1 cannot build on Cloud IDE).
 
 **Launch Application** → port **8000**
 
