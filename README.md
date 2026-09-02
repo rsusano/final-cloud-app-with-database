@@ -1,3 +1,30 @@
+# Django Online Course App — Final Project
+
+Final project for **Django Application Development with SQL and Databases** (IBM Full Stack Certificate).
+
+## Project
+
+Adds a course **assessment/exam** feature to the existing `onlinecourse` Django app:
+- `Question`, `Choice`, and `Submission` models
+- Django admin configuration
+- Exam form on course detail page
+- Submit and exam result views
+
+## Run locally (Cloud IDE recommended)
+
+```bash
+pip install -r requirements.txt
+python manage.py makemigrations onlinecourse
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver 0.0.0.0:8000
+```
+
+## Submission
+
+See [`submission/SUBMISSION_GUIDE.md`](submission/SUBMISSION_GUIDE.md)
+
+---
 
 **General Notes**
 
